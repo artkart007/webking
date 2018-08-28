@@ -1,4 +1,6 @@
 import React from 'react';
+import { LinkContainer } from 'react-router-bootstrap';
+
 import {
     Collapse,
     Navbar,
@@ -6,11 +8,7 @@ import {
     NavbarBrand,
     Nav,
     NavItem,
-    NavLink,
-    UncontrolledDropdown,
-    DropdownToggle,
-    DropdownMenu,
-    DropdownItem
+    NavLink
 } from 'reactstrap';
 
 export default class Header extends React.Component {
@@ -31,35 +29,36 @@ export default class Header extends React.Component {
         return (
             <div >
                 <Navbar color="light" light expand="md">
-                    <NavbarBrand href="/">reactstrap</NavbarBrand>
-                    <NavbarToggler onClick={this.toggle} />
-                    <Collapse isOpen={this.state.isOpen} navbar>
-                        <Nav className="ml-auto" navbar>
-                            <NavItem>
-                                <NavLink href="/components/">Components</NavLink>
-                            </NavItem>
-                            <NavItem>
-                                <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
-                            </NavItem>
-                            <UncontrolledDropdown nav inNavbar>
-                                <DropdownToggle nav caret>
-                                    Options
-                </DropdownToggle>
-                                <DropdownMenu right>
-                                    <DropdownItem>
-                                        Option 1
-                  </DropdownItem>
-                                    <DropdownItem>
-                                        Option 2
-                  </DropdownItem>
-                                    <DropdownItem divider />
-                                    <DropdownItem>
-                                        Reset
-                  </DropdownItem>
-                                </DropdownMenu>
-                            </UncontrolledDropdown>
-                        </Nav>
-                    </Collapse>
+                    <div className="container">
+                        <LinkContainer activeClassName='active' to={'/'}>
+                            <NavbarBrand >
+                                Pappu
+                        </NavbarBrand>
+                        </LinkContainer>
+                        <NavbarToggler onClick={this.toggle} />
+                        <Collapse isOpen={this.state.isOpen} navbar>
+                            <Nav className="ml-auto" navbar>
+                                <LinkContainer activeClassName='active' to={'/about'}>
+                                    <NavItem><NavLink>About</NavLink></NavItem>
+                                </LinkContainer>
+                                <LinkContainer activeClassName='active' to={'/services'}>
+                                    <NavItem><NavLink >Services</NavLink></NavItem>
+                                </LinkContainer>
+                                <LinkContainer activeClassName='active' to={'/clients'}>
+                                    <NavItem><NavLink >Clients</NavLink></NavItem>
+                                </LinkContainer>
+                                <LinkContainer activeClassName='active' to={'/career'}>
+                                    <NavItem><NavLink >Career</NavLink></NavItem>
+                                </LinkContainer>
+                                <LinkContainer activeClassName='active' to={'/training'}>
+                                    <NavItem><NavLink >Training</NavLink></NavItem>
+                                </LinkContainer>
+                                <LinkContainer activeClassName='active' to={'/contact'}>
+                                    <NavItem><NavLink >Contact</NavLink></NavItem>
+                                </LinkContainer>
+                            </Nav>
+                        </Collapse>
+                    </div>
                 </Navbar>
             </div>
         );
