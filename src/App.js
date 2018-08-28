@@ -9,6 +9,7 @@ import Clients from './components/Clients'
 import Career from './components/Career'
 import Training from './components/Training'
 import Contact from './components/Contact'
+import Footer from './containers/Footer';
 
 class App extends Component {
   render() {
@@ -26,6 +27,7 @@ class App extends Component {
           <Route exact path="/contact" component={Contact} />
           </div>
         </main>
+        <Footer/>
       </div>
     );
   }
