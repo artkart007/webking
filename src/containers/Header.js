@@ -1,5 +1,6 @@
 import React from 'react';
 import { LinkContainer } from 'react-router-bootstrap';
+import { NavLink as RRNavLink } from 'react-router-dom';
 
 import {
     Collapse,
@@ -10,6 +11,7 @@ import {
     NavItem,
     NavLink
 } from 'reactstrap';
+import { Config } from '../Config';
 
 export default class Header extends React.Component {
     constructor(props) {
@@ -32,30 +34,30 @@ export default class Header extends React.Component {
                     <div className="container">
                         <LinkContainer activeClassName='active' to={'/'}>
                             <NavbarBrand >
-                                Pappu
+                                {Config.brandName}
                         </NavbarBrand>
                         </LinkContainer>
                         <NavbarToggler onClick={this.toggle} />
                         <Collapse isOpen={this.state.isOpen} navbar>
                             <Nav className="ml-auto" navbar>
-                                <LinkContainer activeClassName='active' to={'/about'}>
-                                    <NavItem><NavLink>About</NavLink></NavItem>
-                                </LinkContainer>
-                                <LinkContainer activeClassName='active' to={'/services'}>
-                                    <NavItem><NavLink >Services</NavLink></NavItem>
-                                </LinkContainer>
-                                <LinkContainer activeClassName='active' to={'/clients'}>
-                                    <NavItem><NavLink >Clients</NavLink></NavItem>
-                                </LinkContainer>
-                                <LinkContainer activeClassName='active' to={'/career'}>
-                                    <NavItem><NavLink >Career</NavLink></NavItem>
-                                </LinkContainer>
-                                <LinkContainer activeClassName='active' to={'/training'}>
-                                    <NavItem><NavLink >Training</NavLink></NavItem>
-                                </LinkContainer>
-                                <LinkContainer activeClassName='active' to={'/contact'}>
-                                    <NavItem><NavLink >Contact</NavLink></NavItem>
-                                </LinkContainer>
+                                <NavItem className="navItem">
+                                    <NavLink tag={RRNavLink} className="nav-link" to="/about" activeClassName="active">About</NavLink>
+                                </NavItem>
+                                <NavItem className="navItem">
+                                    <NavLink tag={RRNavLink} className="nav-link" to="/services" activeClassName="active">Services</NavLink>
+                                </NavItem>
+                                <NavItem className="navItem">
+                                    <NavLink tag={RRNavLink} className="nav-link" to="/clients" activeClassName="active">Clients</NavLink>
+                                </NavItem>
+                                <NavItem className="navItem">
+                                    <NavLink tag={RRNavLink} className="nav-link" to="/career" activeClassName="active">Career</NavLink>
+                                </NavItem>
+                                <NavItem className="navItem">
+                                    <NavLink tag={RRNavLink} className="nav-link" to="/training" activeClassName="active">Training</NavLink>
+                                </NavItem>
+                                <NavItem className="navItem">
+                                    <NavLink tag={RRNavLink} className="nav-link" to="/contact" activeClassName="active">Contact</NavLink>
+                                </NavItem>
                             </Nav>
                         </Collapse>
                     </div>
