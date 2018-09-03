@@ -10,29 +10,8 @@ import {
 } from '../modules/counter'
 
 const Services = props => (
-  <div>
-     <h1>Home</h1>
-    <p>Count: {props.count}</p>
-
-    <p>
-      <button onClick={props.increment}>Increment</button>
-      <button onClick={props.incrementAsync} disabled={props.isIncrementing}>
-        Increment Async
-      </button>
-    </p>
-
-    <p>
-      <button onClick={props.decrement}>Decrement</button>
-      <button onClick={props.decrementAsync} disabled={props.isDecrementing}>
-        Decrement Async
-      </button>
-    </p>
-
-    <p>
-      <button onClick={() => props.changePage()}>
-        Go to about page via redux
-      </button>
-    </p> 
+  <div className="app-content">
+    We are offering variety of software related program to  name few are Web Designing , SEO etc.
   </div>
 )
 

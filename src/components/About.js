@@ -10,29 +10,8 @@ import {
 } from '../modules/counter'
 
 const About = props => (
-  <div>
-     <h1>About</h1>
-    <p>Count: {props.count}</p>
-
-    <p>
-      <button onClick={props.increment}>Increment</button>
-      <button onClick={props.incrementAsync} disabled={props.isIncrementing}>
-        Increment Async
-      </button>
-    </p>
-
-    <p>
-      <button onClick={props.decrement}>Decrement</button>
-      <button onClick={props.decrementAsync} disabled={props.isDecrementing}>
-        Decrement Async
-      </button>
-    </p>
-
-    <p>
-      <button onClick={() => props.changePage()}>
-        Go to about page via redux
-      </button>
-    </p> 
+  <div className="app-content">
+    We are constantly commited to grow along with yours organisation success. We are customer focused group enabling automation and smoother operational changes.
   </div>
 )
 
