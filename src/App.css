@@ -1,11 +1,7 @@
 .error-template {padding: 40px 15px;text-align: center;}
 .error-actions {margin-top:15px;margin-bottom:15px;}
 .error-actions .btn { margin-right:10px; }
-
-.app-content{
-    font-size: 40px;
-    padding: 50px;
-    margin: 50px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+.mt-2rem{
+    margin-top: 2rem;
+   
 }

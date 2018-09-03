@@ -17,5 +17,41 @@ export const Config = {
         tw: 'http://localhost:3000/career3',
         linkedIn: 'http://localhost:3000/career4',
         insta: 'http://localhost:3000/career5'
-    }
+    },
+    about : [
+        {
+            preText : '<b>1.</b> ',
+            text: 'HI',
+            class : 'primary'
+        },
+        {
+            preText : '<b>2.</b> ',
+            text : 'Me',
+            class : 'secondary'
+        }
+    ],
+    career : [
+        {
+            preText : '<b>1.</b> ',
+            text: 'HI',
+            class : 'primary'
+        },
+        {
+            preText : '<b>2.</b> ',
+            text : 'Me',
+            class : 'secondary'
+        }
+    ],
+    services : [
+        {
+            preText : '<b>1.</b> ',
+            text: 'HI',
+            class : 'primary'
+        },
+        {
+            preText : '<b>2.</b> ',
+            text : 'Me',
+            class : 'secondary'
+        }
+    ]
 }

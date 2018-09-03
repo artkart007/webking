@@ -8,11 +8,22 @@ import {
   decrement,
   decrementAsync
 } from '../modules/counter'
+import List from '../containers/List';
+import { Config } from '../Config';
 
 const Services = props => (
-  <div className="app-content">
-    We are offering variety of software related program to  name few are Web Designing , SEO etc.
+  <div className="container">
+
+  <div class="jumbotron mt-2rem">
+    <h1 class="display-4">We offer</h1>
+    <p class="lead">
+      We are offering variety of software related program to  name few are Web Designing , SEO etc.
+    </p>
+    <hr class="my-4" />
+    <List list={Config.services} />
   </div>
+  </div>
+
 )
 
 const mapStateToProps = ({ counter }) => ({

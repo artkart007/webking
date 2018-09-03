@@ -35,7 +35,7 @@ export default class Header extends React.Component {
                         <LinkContainer activeClassName='active' to={'/'}>
                             <NavbarBrand >
                                 {Config.brandName}
-                        </NavbarBrand>
+                            </NavbarBrand>
                         </LinkContainer>
                         <NavbarToggler onClick={this.toggle} />
                         <Collapse isOpen={this.state.isOpen} navbar>
@@ -46,15 +46,15 @@ export default class Header extends React.Component {
                                 <NavItem className="navItem">
                                     <NavLink tag={RRNavLink} className="nav-link" to="/services" activeClassName="active">Services</NavLink>
                                 </NavItem>
-                                <NavItem className="navItem">
+                                {/* <NavItem className="navItem">
                                     <NavLink tag={RRNavLink} className="nav-link" to="/clients" activeClassName="active">Clients</NavLink>
-                                </NavItem>
+                                </NavItem> */}
                                 <NavItem className="navItem">
                                     <NavLink tag={RRNavLink} className="nav-link" to="/career" activeClassName="active">Career</NavLink>
                                 </NavItem>
-                                <NavItem className="navItem">
+                                {/* <NavItem className="navItem">
                                     <NavLink tag={RRNavLink} className="nav-link" to="/training" activeClassName="active">Training</NavLink>
-                                </NavItem>
+                                </NavItem> */}
                                 <NavItem className="navItem">
                                     <NavLink tag={RRNavLink} className="nav-link" to="/contact" activeClassName="active">Contact</NavLink>
                                 </NavItem>

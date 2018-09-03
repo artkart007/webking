@@ -20,7 +20,7 @@ export default class Footer extends React.Component {
                     <div className="row">
                         <div className=" col-sm-4 col-md col-sm-4  col-12 col">
                             <h5 className="headin5_amrc col_white_amrc pt2">Find us</h5>
-                            <p className="mb10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                            <p class="mb-10">Please reach out to us to discuss more on the your organisation requirements.</p>
                             <p><i className="fa fa-location-arrow"></i> {Config.brandAddress.street}, {Config.brandAddress.city}, {Config.brandAddress.state}, {Config.brandAddress.country}, {Config.brandAddress.pincode}</p>
                             <p><i className="fa fa-phone"></i>  {Config.brandAddress.phone}  </p>
                             <p><i className="fa  fa-envelope"></i> {Config.brandAddress.emailId}  </p>

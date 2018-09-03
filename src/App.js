@@ -17,9 +17,9 @@ class App extends Component {
       <div >
         <Header />
         <main>
-          <div className="container">
-            <Switch>
-              <Route exact path="/" component={Home} />
+          <Switch>
+            <Route exact path="/" component={Home} />
+
               <Route exact path="/about" component={About} />
               <Route exact path="/services" component={Services} />
               <Route exact path="/clients" component={Clients} />
@@ -27,8 +27,8 @@ class App extends Component {
               <Route exact path="/training" component={Training} />
               <Route exact path="/contact" component={Contact} />
               <Route component={NoMatch} />
-            </Switch>
-          </div>
+
+          </Switch>
         </main>
         <Footer />
       </div>

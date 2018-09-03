@@ -8,11 +8,23 @@ import {
   decrement,
   decrementAsync
 } from '../modules/counter'
+import { Config } from '../Config';
+import List from '../containers/List';
 
 const Career = props => (
-  <div className="app-content">
-    We are shaping youth dreams to reach their  career goals. Please come along with us in our core vision. We are loooking for candidate highly motivated for the company vision.
+  <div className="container">
+
+    <div class="jumbotron mt-2rem">
+      <h1 class="display-4">Come along</h1>
+      <p class="lead">
+        We are shaping youth dreams to reach their career goals. Please come along with us in our core vision. We are loooking for candidate highly motivated for the company vision.
+    </p>
+      <hr class="my-4" />
+      <List list={Config.career} />
+
+    </div>
   </div>
+
 )
 
 const mapStateToProps = ({ counter }) => ({
