@@ -2,14 +2,14 @@ export const Config = {
     brandName: "Webking",
     currentYear: new Date().getFullYear(),
     brandAddress: {
-        phone: ' +91-9999878398',
+        phone: ' +91-70041 06084',
         state: 'Jharkhand',
-        city: 'Bokaro Steel City',
+        city: 'Bokaro',
         country: 'India',
         pincode: 827013,
         street: 'Yadhubansh Nagar, Chas',
         availableHour: '9am - 5pm Weekdays',
-        emailId: 'info@example.com'
+        emailId: 'artkart007@gmail.com'
     },
     socialLinks: {
         fb: 'http://localhost:3000/career1',
@@ -21,37 +21,42 @@ export const Config = {
     about : [
         {
             preText : '<b>1.</b> ',
-            text: 'HI',
-            class : 'primary'
+            text: 'Best-of-Breed business solutions',
+            class : 'light'
         },
         {
             preText : '<b>2.</b> ',
-            text : 'Me',
-            class : 'secondary'
+            text : 'consulting exercise',
+            class : 'light'
         }
     ],
     career : [
         {
             preText : '<b>1.</b> ',
-            text: 'HI',
-            class : 'primary'
+            text: 'building next generation solutions',
+            class : 'light'
         },
         {
             preText : '<b>2.</b> ',
-            text : 'Me',
-            class : 'secondary'
+            text : 'company success',
+            class : 'light'
         }
     ],
     services : [
         {
             preText : '<b>1.</b> ',
-            text: 'HI',
-            class : 'primary'
+            text: 'Best-of-Breed business solutions',
+            class : 'light'
         },
         {
             preText : '<b>2.</b> ',
-            text : 'Me',
-            class : 'secondary'
+            text : 'Leveraging technology',
+            class : 'light'
+        },
+        {
+            preText : '<b>3.</b> ',
+            text : 'Delivered by best-in-class people',
+            class : 'light'
         }
     ]
 }

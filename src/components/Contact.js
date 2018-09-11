@@ -11,7 +11,7 @@ import {
   decrement,
   decrementAsync
 } from '../modules/counter'
-import { MapContainer } from './MapContainer';
+// import { MapContainer } from './MapContainer';
 import './Contact.css'
 const Contacts = props => (
   <div className="container">

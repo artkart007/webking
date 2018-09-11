@@ -20,6 +20,8 @@ const Career = props => (
         We are shaping youth dreams to reach their career goals. Please come along with us in our core vision. We are loooking for candidate highly motivated for the company vision.
     </p>
       <hr class="my-4" />
+
+      <p>Be the owner of ....</p>
       <List list={Config.career} />
 
     </div>

@@ -14,7 +14,7 @@ import Footer from './containers/Footer';
 class App extends Component {
   render() {
     return (
-      <div >
+      <React.Fragment >
         <Header />
         <main>
           <Switch>
@@ -31,7 +31,7 @@ class App extends Component {
           </Switch>
         </main>
         <Footer />
-      </div>
+      </React.Fragment>
     );
   }
 }

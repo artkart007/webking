@@ -4,30 +4,40 @@ import {
   CarouselItem,
   CarouselControl,
   CarouselIndicators,
-  CarouselCaption
+  // CarouselCaption
 } from 'reactstrap';
 import './Home.css'
-import Image1 from './../assets/images/IMG_20171222_151815.jpg'
-import Image2 from './../assets/images/IMG_20171222_151822.jpg'
-import Image3 from './../assets/images/IMG_20171222_151825.jpg'
+import About from './About';
+import Services from './Services';
+import Contact from './Contact';
+import Career from './Career';
 const items = [
   {
     id: '1',
-    src: Image1,
     altText: 'Slide 1',
-    caption: 'Slide 1'
+    caption: 'Slide 1',
+    component : <Services/>
   },
   {
     id: '2',
-    src: Image2,
     altText: 'Slide 2',
-    caption: 'Slide 2'
+    caption: 'Slide 2',
+    component : <About/>
+
   },
   {
     id: '3',
-    src: Image3,
     altText: 'Slide 3',
-    caption: 'Slide 3'
+    caption: 'Slide 3',
+    component : <Contact/>
+
+  },
+  {
+    id: '4',
+    altText: 'Slide 4',
+    caption: 'Slide 4',
+    component : <Career/>
+
   }
 ];
 
@@ -67,18 +77,23 @@ class Home extends Component {
     this.setState({ activeIndex: newIndex });
   }
 
+  
   render() {
     const { activeIndex } = this.state;
 
     const slides = items.map((item) => {
       return (
         <CarouselItem
-          onExiting={this.onExiting}
+          on
+          Exiting={this.onExiting}
           onExited={this.onExited}
           key={item.src}
         >
-          <img src={item.src} alt={item.altText} />
-          <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
+          {/* <img src={item.src} alt={item.altText} /> */}
+          <div className="divStyle">
+            {item.component}
+            </div>
+          {/* <CarouselCaption captionText={item.caption} captionHeader={item.caption} /> */}
         </CarouselItem>
       );
     });

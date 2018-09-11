@@ -21,6 +21,7 @@ const About = props => (
       We are constantly commited to grow along with yours organisation success. We are customer focused group enabling automation and smoother operational changes.
     </p>
     <hr class="my-4" />
+    <p>Here we provide ... </p>
     <List list={Config.about} />
   </div>
 </div>

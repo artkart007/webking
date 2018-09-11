@@ -1,14 +1,14 @@
 import React from 'react';
 import './Footer.css'
 import { Config } from '../Config';
-import { NavLink as RRNavLink } from 'react-router-dom';
+import { NavLink as RRNavLink, Link } from 'react-router-dom';
 
 import {
-    Collapse,
-    Navbar,
-    NavbarToggler,
-    NavbarBrand,
-    Nav,
+    // Collapse,
+    // Navbar,
+    // NavbarToggler,
+    // NavbarBrand,
+    // Nav,
     NavItem,
     NavLink
 } from 'reactstrap';
@@ -28,7 +28,7 @@ export default class Footer extends React.Component {
                         </div>
 
 
-                        <div className=" col-sm-4 col-md  col-6 col">
+                        <div className=" col-sm-4 col-md  col-6 col ">
                             <h5 className="headin5_amrc col_white_amrc pt2">Quick links</h5>
                             <ul className="footer_ul_amrc">
                                 <NavItem className="navItem">
@@ -37,24 +37,25 @@ export default class Footer extends React.Component {
                                 <NavItem className="navItem">
                                     <NavLink tag={RRNavLink} className="nav-link" to="/services" activeClassName="active">Services</NavLink>
                                 </NavItem>
-                                <NavItem className="navItem">
+                                {/* <NavItem className="navItem">
                                     <NavLink tag={RRNavLink} className="nav-link" to="/clients" activeClassName="active">Clients</NavLink>
-                                </NavItem>
-                            </ul>
-                        </div>
-                        <div className=" col-sm-4 col-md  col-6 col">
-                            <h5 className="headin5_amrc col_white_amrc pt2">Few More Quick links</h5>
-                            <ul className="footer_ul_amrc">
+                                </NavItem> */}
                                 <NavItem className="navItem">
                                     <NavLink tag={RRNavLink} className="nav-link" to="/career" activeClassName="active">Career</NavLink>
                                 </NavItem>
-                                <NavItem className="navItem">
+                                {/* <NavItem className="navItem">
                                     <NavLink tag={RRNavLink} className="nav-link" to="/training" activeClassName="active">Training</NavLink>
-                                </NavItem>
+                                </NavItem> */}
                                 <NavItem className="navItem">
                                     <NavLink tag={RRNavLink} className="nav-link" to="/contact" activeClassName="active">Contact</NavLink>
-                                </NavItem>         </ul>
+                                </NavItem>
+                            </ul>
                         </div>
+                        {/* <div className="col-sm-4 col-md  col-6 col">
+                            <h5 className="headin5_amrc col_white_amrc pt2">Few More Quick links</h5>
+                            <ul className="footer_ul_amrc">
+                                        </ul>
+                        </div> */}
 
                     </div>
                 </div>
@@ -62,16 +63,17 @@ export default class Footer extends React.Component {
 
                 <div className="container">
 
-                    <p className="text-center">Copyright @{Config.currentYear} | Designed With by <a href="#">
-                        {Config.brandName}
-                    </a></p>
+                    <p className="text-center">Copyright @{Config.currentYear} | 
+                    Designed With by <Link to="/">
+                      {Config.brandName}
+                    </Link></p>
 
                     <ul className="social_footer_ul">
-                        <li><a href={Config.socialLinks.fb}><i className="fab fa-facebook-f"></i></a></li>
-                        <li><a href={Config.socialLinks.tw}><i className="fab fa-twitter"></i></a></li>
-                        <li><a href={Config.socialLinks.linkedIn}><i className="fab fa-linkedin"></i></a></li>
-                        <li><a href={Config.socialLinks.insta}><i className="fab fa-instagram"></i></a></li>
-                        <li><a href={Config.socialLinks.yb}><i className="fab fa-youtube"></i></a></li>
+                        <li><a target="_blank" href={Config.socialLinks.fb}><i className="fab fa-facebook-f"></i></a></li>
+                        <li><a target="_blank" href={Config.socialLinks.tw}><i className="fab fa-twitter"></i></a></li>
+                        <li><a target="_blank" href={Config.socialLinks.linkedIn}><i className="fab fa-linkedin"></i></a></li>
+                        <li><a target="_blank" href={Config.socialLinks.insta}><i className="fab fa-instagram"></i></a></li>
+                        <li><a target="_blank" href={Config.socialLinks.yb}><i className="fab fa-youtube"></i></a></li>
                     </ul>
                 </div>
             </footer>
